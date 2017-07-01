@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Conversational Bots-->
+        <scene sceneID="eDt-u9-Hzq">
+            <objects>
+                <viewController storyboardIdentifier="Bots" title="Conversational Bots" id="DFK-aW-Tcv" customClass="BotsLandingViewController" customModule="MySampleApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="joV-fk-BZA"/>
+                        <viewControllerLayoutGuide type="bottom" id="UC4-e6-nvI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n0T-7H-QFv">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeO-Y1-diG">
+                                <rect key="frame" x="20" y="8" width="71" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Understand user intent and trigger business workflows using voice and chat interfaces." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXi-Ql-zQN">
+                                <rect key="frame" x="20" y="36" width="560" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample App Features" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiC-mn-ncO">
+                                <rect key="frame" x="20" y="85" width="162" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="egc-Md-w2M" userLabel="Bots List Table View">
+                                <rect key="frame" x="20" y="392" width="560" height="124"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="I9s-Mo-qrI"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BotsListTableCell" id="D6f-c3-sCR">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D6f-c3-sCR" id="rOm-Iw-DIR">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Powered by Amazon Lex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOZ-Ye-O7Q">
+                                <rect key="frame" x="248" y="370" width="128" height="14"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Sample App demonstrates how bots configured with Amazon Lex can be used in voice and chat interfaces in mobile apps. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80m-s1-E3E">
+                                <rect key="frame" x="20" y="113" width="560" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="oeO-Y1-diG" secondAttribute="leading" id="471-Nz-HMa"/>
+                            <constraint firstItem="egc-Md-w2M" firstAttribute="trailing" secondItem="80m-s1-E3E" secondAttribute="trailing" id="DWY-er-uOV"/>
+                            <constraint firstItem="egc-Md-w2M" firstAttribute="leading" secondItem="80m-s1-E3E" secondAttribute="leading" id="Eeg-EO-73w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="80m-s1-E3E" secondAttribute="trailing" id="QUf-W7-XVE"/>
+                            <constraint firstItem="80m-s1-E3E" firstAttribute="leading" secondItem="FiC-mn-ncO" secondAttribute="leading" id="UUc-O7-lrq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xXi-Ql-zQN" secondAttribute="trailing" id="VQF-e3-t5k"/>
+                            <constraint firstItem="80m-s1-E3E" firstAttribute="leading" secondItem="sOZ-Ye-O7Q" secondAttribute="trailing" constant="-355.5" id="W76-2p-yfT"/>
+                            <constraint firstItem="FiC-mn-ncO" firstAttribute="leading" secondItem="xXi-Ql-zQN" secondAttribute="leading" id="XxV-ib-v2T"/>
+                            <constraint firstItem="xXi-Ql-zQN" firstAttribute="top" secondItem="oeO-Y1-diG" secondAttribute="bottom" constant="8" symbolic="YES" id="Y2C-yx-Q5A"/>
+                            <constraint firstItem="egc-Md-w2M" firstAttribute="top" secondItem="sOZ-Ye-O7Q" secondAttribute="bottom" constant="8" symbolic="YES" id="ZmS-w7-1ZA"/>
+                            <constraint firstItem="xXi-Ql-zQN" firstAttribute="leading" secondItem="oeO-Y1-diG" secondAttribute="leading" id="b4d-vQ-XOS"/>
+                            <constraint firstItem="80m-s1-E3E" firstAttribute="top" secondItem="FiC-mn-ncO" secondAttribute="bottom" constant="8" symbolic="YES" id="fsM-Kl-33n"/>
+                            <constraint firstItem="sOZ-Ye-O7Q" firstAttribute="centerX" secondItem="egc-Md-w2M" secondAttribute="centerX" id="i42-96-Wcu"/>
+                            <constraint firstAttribute="bottom" secondItem="egc-Md-w2M" secondAttribute="bottom" constant="20" symbolic="YES" id="lbU-E3-dAS"/>
+                            <constraint firstItem="FiC-mn-ncO" firstAttribute="top" secondItem="xXi-Ql-zQN" secondAttribute="bottom" constant="8" symbolic="YES" id="moH-Ij-Kzm"/>
+                            <constraint firstItem="oeO-Y1-diG" firstAttribute="top" secondItem="joV-fk-BZA" secondAttribute="bottom" constant="8" symbolic="YES" id="oyK-8L-08f"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="W76-2p-yfT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="botsListTableView" destination="egc-Md-w2M" id="tDp-Zu-RQl"/>
+                        <segue destination="zdj-rR-WiH" kind="show" identifier="BotShowDetailsSegue" id="4jS-Eq-WEz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFZ-LO-DAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598" y="436"/>
+        </scene>
+        <!--Conversational Bots-->
+        <scene sceneID="UT2-1r-tYK">
+            <objects>
+                <viewController storyboardIdentifier="BotOperationsList" title="Conversational Bots" id="zdj-rR-WiH" customClass="BotOperationsViewController" customModule="MySampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NiA-fQ-TEE"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Zh-v5-lrB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vus-Q5-qYS">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bot Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uz-LN-SV2">
+                                <rect key="frame" x="20" y="8" width="118" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bot Description goes here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMw-lS-Veu">
+                                <rect key="frame" x="20" y="36" width="560" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Inputs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I19-vz-XpB">
+                                <rect key="frame" x="20" y="64" width="108" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Amazon Lex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dM6-zM-9IG">
+                                <rect key="frame" x="236" y="410" width="128" height="14"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eHD-rE-tzS">
+                                <rect key="frame" x="20" y="432" width="560" height="84"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="ppV-Rj-LpT"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OperationTypeCellIdentifier" id="K7M-ti-T5K">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K7M-ti-T5K" id="WPs-3g-ZBl">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rUl-46-DSw">
+                                <rect key="frame" x="20" y="92" width="560" height="310"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommandCellIdentifier" id="6cB-kd-wEE">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6cB-kd-wEE" id="X3E-9v-Oca">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eHD-rE-tzS" firstAttribute="centerX" secondItem="dM6-zM-9IG" secondAttribute="centerX" id="5cX-MD-8Zy"/>
+                            <constraint firstItem="8Uz-LN-SV2" firstAttribute="top" secondItem="NiA-fQ-TEE" secondAttribute="bottom" constant="8" symbolic="YES" id="7Az-MA-q1e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RMw-lS-Veu" secondAttribute="trailing" id="Gts-O4-QIf"/>
+                            <constraint firstItem="I19-vz-XpB" firstAttribute="top" secondItem="RMw-lS-Veu" secondAttribute="bottom" constant="8" symbolic="YES" id="L8H-Zk-a3R"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8Uz-LN-SV2" secondAttribute="leading" id="ONT-0a-Jb3"/>
+                            <constraint firstItem="rUl-46-DSw" firstAttribute="leading" secondItem="eHD-rE-tzS" secondAttribute="leading" id="XBR-dY-Odc"/>
+                            <constraint firstItem="rUl-46-DSw" firstAttribute="trailing" secondItem="eHD-rE-tzS" secondAttribute="trailing" id="af1-ED-wc4"/>
+                            <constraint firstItem="RMw-lS-Veu" firstAttribute="top" secondItem="8Uz-LN-SV2" secondAttribute="bottom" constant="8" symbolic="YES" id="esn-i8-sxc"/>
+                            <constraint firstItem="dM6-zM-9IG" firstAttribute="top" secondItem="rUl-46-DSw" secondAttribute="bottom" constant="8" symbolic="YES" id="ewm-oX-1OG"/>
+                            <constraint firstItem="rUl-46-DSw" firstAttribute="top" secondItem="I19-vz-XpB" secondAttribute="bottom" constant="8" symbolic="YES" id="iNe-pP-dZq"/>
+                            <constraint firstItem="RMw-lS-Veu" firstAttribute="leading" secondItem="8Uz-LN-SV2" secondAttribute="leading" id="iNj-dg-NN6"/>
+                            <constraint firstItem="I19-vz-XpB" firstAttribute="leading" secondItem="RMw-lS-Veu" secondAttribute="leading" id="lAN-bE-cGN"/>
+                            <constraint firstAttribute="bottom" secondItem="eHD-rE-tzS" secondAttribute="bottom" constant="20" symbolic="YES" id="nKW-eo-fxg"/>
+                            <constraint firstItem="eHD-rE-tzS" firstAttribute="top" secondItem="dM6-zM-9IG" secondAttribute="bottom" constant="8" symbolic="YES" id="olW-aJ-eBT"/>
+                            <constraint firstItem="rUl-46-DSw" firstAttribute="leading" secondItem="I19-vz-XpB" secondAttribute="leading" id="qC1-DD-NIk"/>
+                            <constraint firstItem="rUl-46-DSw" firstAttribute="trailing" secondItem="RMw-lS-Veu" secondAttribute="trailing" id="xKE-Aw-fLq"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="botCommands" destination="rUl-46-DSw" id="mv3-fM-K2o"/>
+                        <outlet property="botDescription" destination="RMw-lS-Veu" id="k69-V2-HIZ"/>
+                        <outlet property="botIntentsLabel" destination="I19-vz-XpB" id="855-ui-pf2"/>
+                        <outlet property="conversationTypesList" destination="eHD-rE-tzS" id="LOH-j1-EW6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rJg-0s-HUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314" y="436"/>
+        </scene>
+    </scenes>
+</document>
